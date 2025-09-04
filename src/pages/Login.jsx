@@ -15,7 +15,7 @@ function Login() {
     setError("");
 
     try {
-      const res = await fetch("http://localhost:5000/auth/login", {
+      const res = await fetch("http://localhost:8085/api/v1", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),

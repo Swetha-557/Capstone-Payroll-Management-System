@@ -69,7 +69,6 @@ function EditProfile() {
     <div className="container mt-5 col-md-6">
       <h2 className="text-success mb-4">Edit My Profile</h2>
       <form onSubmit={handleSubmit} className="card p-4 shadow-lg rounded-4">
-        {/* Name */}
         <div className="mb-3">
           <label className="form-label">Full Name</label>
           <input
@@ -81,8 +80,6 @@ function EditProfile() {
             required
           />
         </div>
-
-        {/* Email (readonly) */}
         <div className="mb-3">
           <label className="form-label">Email (cannot edit)</label>
           <input
@@ -92,8 +89,6 @@ function EditProfile() {
             disabled
           />
         </div>
-
-        {/* Address */}
         <div className="mb-3">
           <label className="form-label">Address</label>
           <input
@@ -105,8 +100,6 @@ function EditProfile() {
             required
           />
         </div>
-
-        {/* Department */}
         <div className="mb-3">
           <label className="form-label">Department</label>
           <select
@@ -124,8 +117,6 @@ function EditProfile() {
             <option value="Software Development">Software Development</option>
           </select>
         </div>
-
-        {/* Start Date */}
         <div className="mb-3">
           <label className="form-label">Start Date</label>
           <input
@@ -137,8 +128,6 @@ function EditProfile() {
             required
           />
         </div>
-
-        {/* Password Change Section */}
         <h5 className="mt-3 text-success">Change Password</h5>
         <div className="mb-3">
           <label className="form-label">Old Password</label>

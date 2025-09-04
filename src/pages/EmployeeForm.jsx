@@ -56,7 +56,6 @@ function EmployeeForm() {
       <div className="card shadow-lg p-4 col-md-6 col-lg-5 rounded-4">
         <h2 className="text-success mb-4 text-center">Complete Your Profile</h2>
         <form onSubmit={handleSubmit}>
-          {/* ✅ Email (readonly) */}
           <div className="mb-3">
             <label className="form-label">Email</label>
             <input

@@ -11,11 +11,11 @@ function AdminDashboard() {
   
   const fetchData = async () => {
     try {
-      const empRes = await fetch("http://localhost:5000/api/employees");
+      const empRes = await fetch("http://localhost:8085/api/v1");
       const empData = await empRes.json();
       setEmployees(empData);
 
-      const leaveRes = await fetch("http://localhost:5000/api/leaves");
+      const leaveRes = await fetch("http://localhost:8085/api/v1");
       const leaveData = await leaveRes.json();
       setLeaves(leaveData);
     } catch (err) {
